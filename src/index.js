@@ -1,13 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ChakraProvider } from "@chakra-ui/react";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import moviesReducer from "./features/movies/moviesSlice";
+import favoritesReducer from "./features/movies/favoritesSlice";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const store = configureStore({
+  reducer: {
+    movies: moviesReducer,
+    favorites: favoritesReducer,
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ChakraProvider>
+        {" "}
+        <App />
+      </ChakraProvider>
+    </Provider>
+    ,
   </React.StrictMode>
 );
 
