@@ -5,7 +5,7 @@ import {
   addFavorite,
   removeFavorite,
 } from "../features/movies/favoritesSlice.js";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Heading, Image } from "@chakra-ui/react";
 
 const MovieCard = ({ movie }) => {
   const dispatch = useDispatch();
@@ -22,9 +22,9 @@ const MovieCard = ({ movie }) => {
   };
 
   return (
-    <Box p={4} borderWidth="1px" borderRadius="lg" boxShadow="md" m={2}>
-      <img src={movie.Poster} alt={movie.Title} />
-      <h3>{movie.Title}</h3>
+    <Box p={4} borderWidth="2px" borderRadius="lg" boxShadow="md" m={1}>
+      <Image w={80} h={80} src={movie.Poster} alt={movie.Title} />
+      <Heading size={20}>{movie.Title}</Heading>
       <p>{movie.Year}</p>
       <Button
         onClick={handleFavorite}
