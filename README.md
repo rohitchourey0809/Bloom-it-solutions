@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-[Bl0om It deployed link](https://bloom-it-solutions.vercel.app/).
+   [Bloom It deployed link Click here](https://bloom-it-solutions.vercel.app/).
 
 ## Available Scripts
 
@@ -44,34 +44,42 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Movie App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is a simple yet functional web application that allows users to browse, search, and view details of movies. The application fetches data from the OMDB API and includes features for searching movies, viewing detailed information about a selected movie, handling loading states and errors gracefully, and managing favorite movies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+- **Home Page**: Displays a list of movies fetched from the API with a search bar to search for movies by title.
+- **Details Page**: Displays detailed information about the selected movie, including title, year, genre, director, plot, and poster.
+- **Favorites**: Allows users to save their favorite movies locally.
+- **Pagination**: Supports pagination for the movie list on the home page.
+- **Responsive Design**: Uses Chakra UI for a clean and intuitive user interface.
+- **Navigation**: Provides a navigation bar for easy access to different sections of the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tech Stack
 
-### Analyzing the Bundle Size
+- React
+- Redux Toolkit
+- Axios
+- Chakra UI
+- Node.js
+- Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Setup Instructions
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Node.js (v12 or higher)
+- npm or yarn
 
-### Advanced Configuration
+### Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Clone the repository**
 
-### Deployment
+   ```bash
+   git clone [https://github.com/your-username/movie-app.git](https://github.com/rohitchourey0809/Bloom-it-solutions.git)
+   cd movie-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Bloom-it-solutions
