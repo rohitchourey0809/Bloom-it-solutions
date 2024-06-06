@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+For open that link first allow the permisiion
+
+![image](https://github.com/rohitchourey0809/Bloom-it-solutions/assets/97465195/9ebf332b-bb2c-49e3-86af-b9a176dba05f)
+
+
    [Bloom It deployed link Click here](https://bloom-it-solutions.vercel.app/).
 
 ## Available Scripts
